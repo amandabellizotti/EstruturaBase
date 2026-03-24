@@ -1,3 +1,5 @@
+  // Não finalizado
+  
   // Bloco 1: Manipulação de Texto (strings) //
         
      function limparCadastro() {
