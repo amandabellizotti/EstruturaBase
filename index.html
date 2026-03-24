@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Lista de Exercícios: JavaScript II</title>   
+</head>
+<body>
+
+    <h1>Lista de Exercícios: JavaScript II</h1>
+
+    <div class="exercicio">
+        <h2>1. Limpeza de Cadastro</h2>
+        <p>Crie uma função que receba um nome com espaços extras e retorne apenas o primeiro nome em letras minúsculas.</p>
+        
+        <label for="inputNome">Digite o nome:</label><br>
+        <input type="text" id="inputNome" placeholder="Ex:   Ana Maria  ">
+        <button onclick="limparCadastro()">Processar Nome</button>
+        
+        <div class="resultado-box">
+            <strong>Resultado:</strong> <span id="resultadoNome">-</span>
+        </div>
+    </div>
+
+    <div class="exercicio">
+        <h2>2. Validação de Email</h2>
+        <p>Verifique se um email termina com @gmail.com</p>
+        
+        <label for="inputEmail">Digite o Email:</label><br>
+        <input type="text" id="inputEmail" placeholder="Ex:   ana@gmail.com  ">
+        <button onclick="validarEmail()">Processar Email</button>
+        
+        <div class="resultado-box">
+            <strong>Resultado:</strong> <span id="resultadoEmail">-</span>
+        </div>
+    </div>
+
+     <div class="exercicio">
+        <h2>2. Mascarar Cartão</h2>
+        <p>Receba um número de cartão de crédito de 16 dígitos e exiba apenas os 4 últimos.</p>
+        
+        <label for="inputCartao">Digite o número de Cartão:</label><br>
+        <input type="text" id="inputCartao" placeholder="Ex:   1234567891231234 ">
+        <button onclick="mascararCartao()">Processar Email</button>
+        
+        <div class="resultado-box">
+            <strong>Resultado:</strong> <span id="resultadoCartao">-</span>
+        </div>
+    </div>
+
+    <div class="exercicio">
+        <h2>4. Localizar Usuário</h2>
+        <p>Uma string para encontrar a posição da primeira e última ":"</p>
+        
+        <label for="inputUsuario">Digite o texto:</label><br>
+        <input type="text" id="inputUsuario" placeholder="Ex: admin:felipe:gerente ">
+        <button onclick="localizarUsuario()">Processar Palavra</button>
+        
+        <div class="resultado-box">
+            <strong>Resultado:</strong> <span id="resultadoUsuario">-</span>
+        </div>
+    </div>
+
+    <div class="exercicio">
+        <h2>5. Gerador de Slug</h2>
+        <p>Transformar o título</p>
+        
+        <label for="inputSlug">Digite o texto:</label><br>
+        <input type="text" id="inputSlug" placeholder="Ex: Como Aprender JS ">
+        <button onclick="geradorSlug()">Processar Palavra</button>
+        
+        <div class="resultado-box">
+            <strong>Resultado:</strong> <span id="resultadoSlug">-</span>
+        </div>
+    </div>
+
+     <div class="exercicio">
+        <h2>6.Censura</h2>
+        <p>Substituir a palavra erro por sucesso</p>
+        
+        <label for="inputCensura">Digite a frase:</label><br>
+        <input type="text" id="inputCensura" placeholder="Ex: Como Aprender JS ">
+        <button onclick="Censura()">Processar Frase</button>
+        
+        <div class="resultado-box">
+            <strong>Resultado:</strong> <span id="resultadoCensura">-</span>
+        </div>
+    </div>
+
+    <div class="exercicio">
+        <h2>7.Extração de Domínio</h2>
+        <p>Extrair apenas o domínio</p>
+        
+        <label for="inputExtrair">Digite a URL:</label><br>
+        <input type="text" id="inputExtrair" placeholder="Ex: https://google.com ">
+        <button onclick="extracaoDominio()">Processar Frase</button>
+        
+        <div class="resultado-box">
+            <strong>Resultado:</strong> <span id="resultadoExtracao">-</span>
+        </div>
+    </div>
+
+    <div class="exercicio">
+        <h2>8.Contagem Caracteres</h2>
+        <p>Validados de SMS que verifique um texto usando de mais de 160 caracteres</p>
+        
+        <label for="inputContagem">Digite a URL:</label><br>
+        <input type="text" id="inputContagem" placeholder="Ex: Como aprender js... ">
+        <button onclick="contagemCaracter()">Processar Frase</button>
+        
+        <div class="resultado-box">
+            <strong>Resultado:</strong> <span id="resultadoContagem">-</span>
+        </div>
+    </div>
+
+    <div class="exercicio">
+        <h2>9.Formatação CPF</h2>
+        <p>Formatação do CPF</p>
+        
+        <label for="inputFormatacao">Digite o CPF:</label><br>
+        <input type="text" id="inputFormatacao" placeholder="12345678901">
+        <button onclick="formatacaoCPF()">Processar CPF</button>
+        
+        <div class="resultado-box">
+            <strong>Resultado:</strong> <span id="resultadoFormatacao">-</span>
+        </div>
+    </div>
+
+    <div class="exercicio">
+        <h2>10.Repetição de Alerta</h2>
+        <p>Receber uma string e número, retornando a string repetida.</p>
+        
+        <label for="inputRepeticao">Digite a palavra:</label><br>
+        <input type="text" id="inputRepeticaoPalavra" placeholder="Ex: Alerta">
+        <br>
+        <label for="inputRepeticao">Digite o número:</label><br>
+        <input type="text" id="inputRepeticaoNumero" placeholder="Ex: 3">
+        <button onclick="repeticao()">Processar a string</button>
+        
+        <div class="resultado-box">
+            <strong>Resultado:</strong> <span id="resultadoRepeticao">-</span>
+        </div>
+    </div>
+
+    <div class="exercicio">
+        <h2>11.Sorteio de Aluno</h2>
+        <p>Sortear um número inteiro entre 1 e 30</p>
+        
+        <label for="inputSorteio" id="inputSorteio"></label>
+        
+        <button onclick="sorteioAluno()">Processar Número</button>
+        
+        <div class="resultado-box">
+            <strong>Resultado:</strong> <span id="resultadoSorteio">-</span>
+        </div>
+    </div>
+
+
+
+    <script src="script/script.js"></script>
+
+</body>
+</html>
